@@ -1,0 +1,10 @@
+invalid selector: Unable to locate an element with the xpath expression //h3[.=iPhone 12 Pro] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//h3[.=iPhone 12 Pro]' is not a valid XPath expression.
+  (Session info: chrome=87.0.4280.88)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-UC1U8QLD', ip: '192.168.0.18', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\serge\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59311}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: b9fc119f21d47e93f1c8a5a879d90cc1
+*** Element info: {Using=xpath, value=//h3[.=iPhone 12 Pro]}

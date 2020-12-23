@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BuyPhoneTestSuite" duration-ms="26811" started-at="2020-12-23T15:53:36 EST" finished-at="2020-12-23T15:54:03 EST">
+    <groups>
+    </groups>
+    <test name="BuyPhoneTest-CH" duration-ms="26811" started-at="2020-12-23T15:53:36 EST" finished-at="2020-12-23T15:54:03 EST">
+      <class name="com.freedommobile.userstories.BuyPhoneTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@38d5b107]" name="setUpDriver" is-config="true" duration-ms="6248" started-at="2020-12-23T15:53:37 EST" finished-at="2020-12-23T15:53:43 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@304a9d7b]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneTest()]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneTest()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@38d5b107]" name="buyPhoneTest" duration-ms="18641" started-at="2020-12-23T15:53:43 EST" finished-at="2020-12-23T15:54:02 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@38d5b107]" name="tearDown" is-config="true" duration-ms="647" started-at="2020-12-23T15:54:02 EST" finished-at="2020-12-23T15:54:03 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.freedommobile.userstories.BuyPhoneTest -->
+    </test> <!-- BuyPhoneTest-CH -->
+  </suite> <!-- BuyPhoneTestSuite -->
+</testng-results>
