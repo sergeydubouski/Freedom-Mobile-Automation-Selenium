@@ -4,8 +4,13 @@ import java.util.Arrays;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -25,13 +30,13 @@ public class TestListener implements ITestListener {
 	private Logger logListener;
 	private String testName;
 
-	@Attachment(value = "Page screenshot", type = "image/png")
+	@Attachment(value = "PAGE SCREENSHOT", type = "image/png")
 	private byte[] saveScreenshot() {
-		TakesScreenshot scrShot = ((TakesScreenshot) BrowserFactory.getThreadDriver());
+		TakesScreenshot scrShot = (TakesScreenshot)BrowserFactory.getThreadDriver();
 		return scrShot.getScreenshotAs(OutputType.BYTES);
 	}
 
-	@Attachment(value="{0}",type = "text/plain")
+	@Attachment(value = "{0}", type = "text/plain")
 	private String saveTextLog(String msg) {
 		return msg;
 	}
@@ -44,6 +49,7 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestSuccess(ITestResult result) {
 		this.logListener.info("[TEST METHOD " + result.getName() + " PASSED]");
+		TestUtil.zoomPageContent(-6);		
 		this.saveScreenshot();
 		this.saveTextLog(result.getMethod().getMethodName() + " PASSED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
@@ -52,10 +58,10 @@ public class TestListener implements ITestListener {
 	@Override
 	public void onTestFailure(ITestResult result) {
 		this.logListener.info("[TEST METHOD " + result.getName() + " FAILED]");
+		TestUtil.zoomPageContent(-6);	
 		this.saveScreenshot();
 		this.saveTextLog(result.getMethod().getMethodName() + " FAILED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
-		this.saveTextLog(result.getThrowable().getMessage());
 	}
 
 	@Override

@@ -34,9 +34,8 @@ public class WelcomePage extends BasePageHeader {
 	}
 	/*click devices tab from a shop tab menu*/
 	public ShopPage clickDevicesButton() {
-		this.click(this.shopDevicesButtonLocator);
-		this.log.info("Click Devices button");
-		//this.waitForVisibility(By.xpath("//div[@data-testid='device_container']"), 5);//explicit wait is used because it takes time to load a shop devices page
+		this.clickByWebDriver(this.shopDevicesButtonLocator);
+		this.log.info("Click Devices button");		
 		return new ShopPage(this.driver,this. log);
 	}
 }

@@ -1,5 +1,8 @@
 package com.freedommobile.base;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -17,7 +20,7 @@ import org.openqa.selenium.TakesScreenshot;
  * @since 22.12.2020
  */
 public class TestUtil extends BaseTest {
-	
+
 	/** sleep a thread execution */
 	protected void sleep(long millis) {
 		try {
@@ -28,7 +31,7 @@ public class TestUtil extends BaseTest {
 	}
 
 	/** take and save a screenshot */
-	public void takeScreenshot( String fileName) {
+	public void takeScreenshot(String fileName) {
 
 		// screenshot file location
 		String screenshotFileLocation = System.getProperty("user.dir") + File.separator + "test-output" + File.separator
@@ -49,7 +52,32 @@ public class TestUtil extends BaseTest {
 			this.log.info("Cannot save the screenshot. Please verify the file path.");
 			e.printStackTrace();
 		}
-		// return screenshotFileLocation;
+	}
+
+	// zoom in and zoom out of the page content
+	public static void zoomPageContent(int times) {
+		try {
+			Robot robot = new Robot();
+			if (times < 0) {
+				for (int i = 0; i > times; i--) {
+					System.out.println("zoom out");
+					robot.keyPress(KeyEvent.VK_CONTROL);
+					robot.keyPress(KeyEvent.VK_SUBTRACT);
+					robot.keyRelease(KeyEvent.VK_SUBTRACT);
+					robot.keyRelease(KeyEvent.VK_CONTROL);
+				}
+			} else {
+				for (int i = 0; i < times; i++) {
+					System.out.println("zoom in");
+					robot.keyPress(KeyEvent.VK_CONTROL);
+					robot.keyPress(KeyEvent.VK_ADD);
+					robot.keyRelease(KeyEvent.VK_ADD);
+					robot.keyRelease(KeyEvent.VK_CONTROL);
+				}
+			}
+		} catch (AWTException e) {
+			e.printStackTrace();
+		}
 	}
 
 }

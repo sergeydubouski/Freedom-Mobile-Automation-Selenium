@@ -1,6 +1,7 @@
 package com.freedommobile.pages;
 
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -12,9 +13,87 @@ import org.openqa.selenium.WebDriver;
  */
 public class AddOnPage extends BasePageHeader {
 
+	private By allAddOnOptionsLocator=By.id("skip-navigation");
+	private By unlimitedLongDistanceUsCheckBoxLocator = By.xpath(
+			"//h3[contains(text(),'Unlimited Long Distance - U.S.')]/ancestor::li//child::input[@type='checkbox']");
+	private By visualVoicemailCheckBoxLocator = By
+			.xpath("//h3[contains(text(),'Visual Voicemail')]/ancestor::li//child::input[@type='checkbox']");
+	private By bigGigWorldSaverFreedomNationwideCheckBoxLocator = By.xpath(
+			"//h3[contains(text(),'Big Gig World Saver – Freedom Nationwide')]/ancestor::li//child::input[@type='checkbox']");
+	private By worldTravallerCheckBoxLocator = By
+			.xpath("//h3[contains(text(),'World Traveller')]/ancestor::li//child::input[@type='checkbox']");
+	private By continueButton=By.xpath("//span[contains(text(),'Continue')]/parent::button");
+
 	public AddOnPage(WebDriver driver, Logger log) {
 		super(driver, log);
-		// TODO Auto-generated constructor stub
 	}
 
+	/* check World Traveller add-on checkbox */
+	private void checkWorldTravallerCheckBox() {
+		if (!this.find(this.worldTravallerCheckBoxLocator).isSelected()) {
+			this.clickByJS(this.worldTravallerCheckBoxLocator);
+		}
+		this.log.info("World Traveller add-on is checked");
+	}
+	/* check Big Gig World Saver – Freedom Nationwide add-on checkbox */
+	private void checkBigGigWorldSaverFreedomNationwideCheckBox() {
+		if (!this.find(this.bigGigWorldSaverFreedomNationwideCheckBoxLocator).isSelected()) {
+			this.clickByJS(this.bigGigWorldSaverFreedomNationwideCheckBoxLocator);
+		}
+		this.log.info("Big Gig World Saver – Freedom Nationwide add-on is checked");
+	}
+	/* check Unlimited Long Distance - U.S. add-on checkbox */
+	private void checkUnlimitedLongDistanceUsCheckBox() {
+		if (!this.find(this.unlimitedLongDistanceUsCheckBoxLocator).isSelected()) {
+			this.clickByJS(this.unlimitedLongDistanceUsCheckBoxLocator);
+		}
+		this.log.info("Unlimited Long Distance - U.S. add-on is checked");
+	}
+	/* check Visual Voicemail add-on checkbox */
+	private void checkVisualVoicemailCheckBox() {
+		if (!this.find(this.visualVoicemailCheckBoxLocator).isSelected()) {
+			this.clickByJS(this.visualVoicemailCheckBoxLocator);
+		}
+		this.log.info("Visual Voicemail add-on is checked");
+	}
+	
+	/*click continue button*/
+	private void clickContinueButton() {
+		this.clickByWebDriver(this.continueButton);
+	}
+	/*choose phone add-ons*/
+	public ShoppingCartPage choosePhoneAddOns(String worldTraveller, String bigGigWorldSaverFreedomNationwide, String unlimitedLongDistanceUs,String visualVoicemail) {
+		
+		//wait for loading a page
+		this.waitForVisibility(this.allAddOnOptionsLocator, 10);
+		
+		//check world traveller check box
+		if(worldTraveller.equals("TRUE")) {
+			this.checkWorldTravallerCheckBox();
+		}
+		//check big gig world saver freedom nationwide check box
+		if(bigGigWorldSaverFreedomNationwide.equals("TRUE")) {
+			this.checkBigGigWorldSaverFreedomNationwideCheckBox();
+		}
+		//check unlimited long distance US check box
+		if(unlimitedLongDistanceUs.equals("TRUE")) {
+			this.checkUnlimitedLongDistanceUsCheckBox();
+		}
+		//check visual voicemail check box
+		if(visualVoicemail.equals("TRUE")) {
+			this.checkVisualVoicemailCheckBox();
+		}	
+		this.clickContinueButton();
+		return new ShoppingCartPage(this.driver,this. log);	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
