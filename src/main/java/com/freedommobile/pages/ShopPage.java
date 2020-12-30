@@ -50,7 +50,7 @@ public class ShopPage extends BasePageHeader {
 	public DeviceColourPage chooseDeviceToBuy(String promotion, String deviceType, String deviceBrand, String deviceModel) {
 
 		// wait for visibility of device catalogue
-		this.waitForVisibility(this.deviceCatalogue, 10);
+		this.waitForVisibility(this.deviceCatalogue, 30);
 
 		// select a promotion
 		if (!promotion.equals("")) {

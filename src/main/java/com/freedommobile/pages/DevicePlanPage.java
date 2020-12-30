@@ -15,9 +15,8 @@ import org.openqa.selenium.WebElement;
  */
 public class DevicePlanPage extends BasePageHeader {
 
-	private By unlimitedPlansButtonLocator = By.xpath("//button[@aria-label='Unlimited Plans']");// this locator is used
-																									// to wait for
-																									// loading the page
+	private By unlimitedPlansButtonLocator = By.xpath("//button[@aria-label='Unlimited Plans']");// this locator is used to wait for loading the page
+	private By continueButtonLocator=By.xpath("//button[.='Continue']");
 
 	public DevicePlanPage(WebDriver driver, Logger log) {
 		super(driver, log);
@@ -37,7 +36,7 @@ public class DevicePlanPage extends BasePageHeader {
 
 	/* click Continue button */
 	private void clickContinueButton() {
-		this.clickByWebDriver(By.xpath("//button[.='Continue']"));
+		this.clickByJS(this.continueButtonLocator);
 		this.log.info("Click Continue button");
 	}
 

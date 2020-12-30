@@ -2,6 +2,7 @@ package com.freedommobile.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 /**
@@ -28,13 +29,16 @@ public class WelcomePage extends BasePageHeader {
 	}
 
 	/*hover over shop tab*/
-	public void hoverOverShopButton() {
+	public void hoverOverShopButton() {		
+		this.waitForVisibility(this.shopButtonLocator, 5);
 		this.hover(this.shopButtonLocator);
 		this.log.info("Hover over shop button");
 	}
 	/*click devices tab from a shop tab menu*/
 	public ShopPage clickDevicesButton() {
-		this.clickByWebDriver(this.shopDevicesButtonLocator);
+		//this.waitForVisibility(this.shopDevicesButtonLocator, 5);
+		this.clickByJS(this.shopDevicesButtonLocator);
+		//this.clickByWebDriver(this.shopDevicesButtonLocator);
 		this.log.info("Click Devices button");		
 		return new ShopPage(this.driver,this. log);
 	}

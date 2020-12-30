@@ -1,11 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.freedommobile</groupId>
-  <artifactId>com.freedommobile</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>freedommobile-test</name>
-  <description>automation test with Selenium of Freedommobile web application</description>
-  <properties>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.freedommobile</groupId>
+	<artifactId>com.freedommobile</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>freedommobile-test</name>
+	<description>automation test with Selenium of Freedommobile web application</description>
+	<properties>
 		<aspectj.version>1.9.6</aspectj.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -76,9 +78,8 @@
 				<!-- <version>2.20</version> -->
 				<version>3.0.0-M5</version>
 				<configuration>
-					<!-- <suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/TestSuites/SmokeTestSuite.xml</suiteXmlFile>
-					</suiteXmlFiles> -->
+					<!-- <suiteXmlFiles> <suiteXmlFile>src/test/resources/TestSuites/SmokeTestSuite.xml</suiteXmlFile> 
+						</suiteXmlFiles> -->
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
@@ -92,9 +93,16 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<!-- <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-surefire-plugin</artifactId> 
-				<version>3.0.0-M5</version> <configuration> <suiteXmlFiles> <suiteXmlFile>src/test/resources/TestSuites/AllTests.xml</suiteXmlFile> 
-				</suiteXmlFiles> </configuration> </plugin> -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M5</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>src\test\resources\testSuites\SeparaTetestSuites\BuyPhoneTestSuite.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>

@@ -39,6 +39,7 @@ public class InvitationToLoginPage extends BasePage {
 	
 	/*click Countinue As Guest button*/
 	public DevicePlanPage chooseContinueAsGuest() {
+		this.waitForVisibility(continueAsGuestButtonLocator, 5);
 		this.clickContinueAsGuestButton();
 		return new DevicePlanPage(this.driver,this. log);
 	}

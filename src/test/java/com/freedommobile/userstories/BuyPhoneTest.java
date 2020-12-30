@@ -25,7 +25,7 @@ import com.freedommobile.pages.WelcomePage;
  */
 public class BuyPhoneTest extends TestUtil {
 
-	@Test(dataProvider = "csvDataReader", dataProviderClass = com.freedommobile.base.CsvDataProvider.class)
+	@Test(invocationCount = 5 ,dataProvider = "csvDataReader", dataProviderClass = com.freedommobile.base.CsvDataProvider.class)
 	public void buyPhoneAsGuestTest(Map<String,String> testdata) {
 		
 		String no = testdata.get("no");
@@ -58,7 +58,7 @@ public class BuyPhoneTest extends TestUtil {
 		this.takeScreenshot("open welcome page");
 
 		// open a shop web page
-		welcomePage.hoverOverShopButton();
+		//welcomePage.hoverOverShopButton();
 		this.takeScreenshot("hover over shop button");
 		ShopPage shopPage = welcomePage.clickDevicesButton();
 		this.takeScreenshot("click devices button");
@@ -86,6 +86,8 @@ public class BuyPhoneTest extends TestUtil {
 		String actualTotalToday = shoppingCartPage.getTotalTodayText();
 		String actualTotalMonthly = shoppingCartPage.getTotalMonthlyText();
 		// TestUtil.sleep(15000);
+		//.TestUtil.zoomPageContentByWebDriver(-4);
+		TestUtil.zoomPageContentByJS(67);
 		
 		// Verification
 		// Verify a total today value before tax

@@ -4,6 +4,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.freedommobile.base.TestUtil;
+
 /**
  * class AddOnPage
  * 
@@ -64,6 +66,8 @@ public class AddOnPage extends BasePageHeader {
 	/*choose phone add-ons*/
 	public ShoppingCartPage choosePhoneAddOns(String worldTraveller, String bigGigWorldSaverFreedomNationwide, String unlimitedLongDistanceUs,String visualVoicemail) {
 		
+		//scroll down the page to display all add-ons
+		TestUtil.scrollPageDown(1200);
 		//wait for loading a page
 		this.waitForVisibility(this.allAddOnOptionsLocator, 10);
 		

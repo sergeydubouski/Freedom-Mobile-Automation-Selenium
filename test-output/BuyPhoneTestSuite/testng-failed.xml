@@ -7,7 +7,7 @@
       <class name="com.freedommobile.userstories.BuyPhoneTest">
         <methods>
           <include name="setUpDriver"/>
-          <include name="buyPhoneAsGuestTest" invocation-numbers="0"/>
+          <include name="buyPhoneAsGuestTest" invocation-numbers="1"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.freedommobile.userstories.BuyPhoneTest -->

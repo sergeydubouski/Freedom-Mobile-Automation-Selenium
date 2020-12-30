@@ -56,7 +56,7 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		TestUtil.zoomPageContent(-4);
+		//TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " PASSED]");
 		this.saveScreenshot();	
 		this.takeScreenshotEveryScrollDown(3, 800);
@@ -66,7 +66,7 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		TestUtil.zoomPageContent(-4);
+		//TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " FAILED]");
 		this.saveScreenshot();
 		this.takeScreenshotEveryScrollDown(3, 800);

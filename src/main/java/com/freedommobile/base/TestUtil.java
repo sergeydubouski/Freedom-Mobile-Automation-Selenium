@@ -56,7 +56,7 @@ public class TestUtil extends BaseTest {
 	}
 
 	// zoom in and zoom out of the page content
-	public static void zoomPageContent(int times) {
+	public static void zoomPageContentByWebDriver(int times) {
 		try {
 			Robot robot = new Robot();
 			if (times < 0) {
@@ -79,6 +79,13 @@ public class TestUtil extends BaseTest {
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}
+		TestUtil.sleep(1000);// it's because a browser is not responsive enough
+	}
+	
+	/* scroll a pge all the way down */
+	public static void zoomPageContentByJS(int zoomPercent) {		
+		System.out.println("zoom set " + zoomPercent + " %");
+		((JavascriptExecutor)BrowserFactory.getThreadDriver()).executeScript("document.body.style.zoom='"+zoomPercent+"%';");
 		TestUtil.sleep(1000);// it's because a browser is not responsive enough
 	}
 
