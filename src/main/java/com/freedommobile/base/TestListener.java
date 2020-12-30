@@ -30,9 +30,17 @@ public class TestListener implements ITestListener {
 	private Logger logListener;
 	private String testName;
 
+	/*take a screenshot every scroll down the page*/
+	private void takeScreenshotEveryScrollDown(int scrollIteration,int pixels) {
+		for (int i = 0; i < scrollIteration; i++) {
+			TestUtil.scrollPageDown(pixels);
+			this.saveScreenshot();
+		}
+	}
+
 	@Attachment(value = "PAGE SCREENSHOT", type = "image/png")
 	private byte[] saveScreenshot() {
-		TakesScreenshot scrShot = (TakesScreenshot)BrowserFactory.getThreadDriver();
+		TakesScreenshot scrShot = (TakesScreenshot) BrowserFactory.getThreadDriver();
 		return scrShot.getScreenshotAs(OutputType.BYTES);
 	}
 
@@ -48,18 +56,20 @@ public class TestListener implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
+		TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " PASSED]");
-		TestUtil.zoomPageContent(-6);		
-		this.saveScreenshot();
+		this.saveScreenshot();	
+		this.takeScreenshotEveryScrollDown(3, 800);
 		this.saveTextLog(result.getMethod().getMethodName() + " PASSED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
 	}
 
 	@Override
 	public void onTestFailure(ITestResult result) {
+		TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " FAILED]");
-		TestUtil.zoomPageContent(-6);	
 		this.saveScreenshot();
+		this.takeScreenshotEveryScrollDown(3, 800);
 		this.saveTextLog(result.getMethod().getMethodName() + " FAILED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
 	}

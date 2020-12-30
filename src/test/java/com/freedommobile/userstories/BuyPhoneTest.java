@@ -77,15 +77,15 @@ public class BuyPhoneTest extends TestUtil {
 		// choose the phone plan
 		AddOnPage addOnPage = devicePlanPage.choosePhonePlan(phonePlanCategory, phonePlan);
 		this.takeScreenshot("Phone plan [" + phonePlanCategory + "], [" + phonePlan + "]");
-		// this.sleep(5000);
+		// TestUtil.sleep(5000);
 		// choose the phone add-ons
 		ShoppingCartPage shoppingCartPage = addOnPage.choosePhoneAddOns(worldTravallerAddOn,
 				bigGigWorldSaverFreedomNationwideAddOn, unlimitedLongDistanceUsAddOn, visualVoicemailAddOn);
 		this.takeScreenshot("Phone plan addons");
-		// this.sleep(10000);
+		//TestUtil.sleep(10000);
 		String actualTotalToday = shoppingCartPage.getTotalTodayText();
 		String actualTotalMonthly = shoppingCartPage.getTotalMonthlyText();
-		// this.sleep(15000);
+		// TestUtil.sleep(15000);
 		
 		// Verification
 		// Verify a total today value before tax
@@ -94,6 +94,6 @@ public class BuyPhoneTest extends TestUtil {
 		// Verify a total monthly value before tax
 		softAssert.assertTrue(actualTotalMonthly.contains(expectedTotalMonthly), errMsgForExpectedTotalMonthly+". Actual ["+actualTotalMonthly+"], Expected ["+expectedTotalMonthly+"]");
 		softAssert.assertAll();
-		this.takeScreenshot("Shopping cart page");// this method is at the end because TestListener class zoom out the page content
+		//this.takeScreenshot("Shopping cart page");
 	}
 }

@@ -9,6 +9,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -22,7 +23,7 @@ import org.openqa.selenium.TakesScreenshot;
 public class TestUtil extends BaseTest {
 
 	/** sleep a thread execution */
-	protected void sleep(long millis) {
+	public static void sleep(long millis) {
 		try {
 			Thread.sleep(millis);
 		} catch (InterruptedException e) {
@@ -60,7 +61,7 @@ public class TestUtil extends BaseTest {
 			Robot robot = new Robot();
 			if (times < 0) {
 				for (int i = 0; i > times; i--) {
-					System.out.println("zoom out");
+					System.out.println("zoom out " + (-i + 1) + " times");
 					robot.keyPress(KeyEvent.VK_CONTROL);
 					robot.keyPress(KeyEvent.VK_SUBTRACT);
 					robot.keyRelease(KeyEvent.VK_SUBTRACT);
@@ -68,7 +69,7 @@ public class TestUtil extends BaseTest {
 				}
 			} else {
 				for (int i = 0; i < times; i++) {
-					System.out.println("zoom in");
+					System.out.println("zoom in " + i + " times");
 					robot.keyPress(KeyEvent.VK_CONTROL);
 					robot.keyPress(KeyEvent.VK_ADD);
 					robot.keyRelease(KeyEvent.VK_ADD);
@@ -78,6 +79,15 @@ public class TestUtil extends BaseTest {
 		} catch (AWTException e) {
 			e.printStackTrace();
 		}
+		TestUtil.sleep(1000);// it's because a browser is not responsive enough
+	}
+
+	/* scroll a pge all the way down */
+	public static void scrollPageDown(int pixels) {		
+		System.out.println("Scroll down by "+pixels+" pixels");
+		JavascriptExecutor js = (JavascriptExecutor) BrowserFactory.getThreadDriver();
+		js.executeScript("window.scrollBy(0,"+pixels+")");
+		TestUtil.sleep(1000);// it's because a browser is not responsive enough
 	}
 
 }
