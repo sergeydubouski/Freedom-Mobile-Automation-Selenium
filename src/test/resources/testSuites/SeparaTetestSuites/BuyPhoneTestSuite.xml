@@ -7,10 +7,10 @@
 			<class name="com.freedommobile.userstories.BuyPhoneTest" />
 		</classes>
 	</test>	
-	<!-- <test name="BuyPhoneTest-FF">
+	<test name="BuyPhoneTest-FF">
 		<parameter name="browser" value="firefox" />
 		<classes>
 			<class name="com.freedommobile.userstories.BuyPhoneTest" />
 		</classes>
-	</test> -->
+	</test>
 </suite>

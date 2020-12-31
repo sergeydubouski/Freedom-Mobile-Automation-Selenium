@@ -25,7 +25,7 @@ import com.freedommobile.pages.WelcomePage;
  */
 public class BuyPhoneTest extends TestUtil {
 
-	@Test(invocationCount = 5 ,dataProvider = "csvDataReader", dataProviderClass = com.freedommobile.base.CsvDataProvider.class)
+	@Test(invocationCount = 1 ,dataProvider = "csvDataReader", dataProviderClass = com.freedommobile.base.CsvDataProvider.class)
 	public void buyPhoneAsGuestTest(Map<String,String> testdata) {
 		
 		String no = testdata.get("no");
