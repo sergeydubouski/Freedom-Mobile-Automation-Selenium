@@ -59,7 +59,7 @@ public class TestListener implements ITestListener {
 		//TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " PASSED]");
 		this.saveScreenshot();	
-		this.takeScreenshotEveryScrollDown(3, 550);
+		this.takeScreenshotEveryScrollDown(4, 550);
 		this.saveTextLog(result.getMethod().getMethodName() + " PASSED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
 	}
@@ -69,7 +69,7 @@ public class TestListener implements ITestListener {
 		//TestUtil.zoomPageContent(-4);
 		this.logListener.info("[TEST METHOD " + result.getName() + " FAILED]");
 		this.saveScreenshot();
-		this.takeScreenshotEveryScrollDown(3, 550);
+		this.takeScreenshotEveryScrollDown(4, 550);
 		this.saveTextLog(result.getMethod().getMethodName() + " FAILED with the following parameters:\n"
 				+ Arrays.toString(result.getParameters()));
 	}

@@ -24,7 +24,7 @@ public class DevicePlanPage extends BasePageHeader {
 
 	/* click a device plan option button */
 	private void clickDevicePlanCategoryButton(String planCategory) {
-		this.clickByWebDriver(By.xpath("//button[@aria-label='" + planCategory + "']"));
+		this.clickByJS(By.xpath("//button[@aria-label='" + planCategory + "']"));
 		this.log.info("Click a plan option by aria-label [" + planCategory + "]");
 	}
 
@@ -55,6 +55,8 @@ public class DevicePlanPage extends BasePageHeader {
 			this.waitForPresence(By.xpath("//input[@id='" + phonePlan + "']"), 5);
 			this.clickDevicePlanButton(phonePlan);
 		}
+		
+		this.waitForPresence(this.continueButtonLocator, 5);
 		this.clickContinueButton();
 		return new AddOnPage(this.driver, this.log);
 	}

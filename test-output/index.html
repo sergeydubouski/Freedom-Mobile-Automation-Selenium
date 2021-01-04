@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-BuyPhoneTestSuite">
+              <span class="suite-name border-passed">BuyPhoneTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-BuyPhoneTestSuite">
+                    <span>C:\Users\serge\eclipse-workspace\Freedommobile-test\src\test\resources\testSuites\SeparaTetestSuites\BuyPhoneTestSuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-BuyPhoneTestSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-BuyPhoneTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-BuyPhoneTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-BuyPhoneTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-BuyPhoneTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-BuyPhoneTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods,   10 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-BuyPhoneTestSuite" class="hide-methods passed suite-BuyPhoneTestSuite"> (hide)</a> <!-- hide-methods passed suite-BuyPhoneTestSuite -->
+                      <a href="#" panel-name="suite-BuyPhoneTestSuite" class="show-methods passed suite-BuyPhoneTestSuite"> (show)</a> <!-- show-methods passed suite-BuyPhoneTestSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-BuyPhoneTestSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)">buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)">buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)">buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BuyPhoneTestSuite" title="com.freedommobile.userstories.BuyPhoneTest" hash-for-method="buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)">buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-BuyPhoneTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-BuyPhoneTestSuite" class="panel BuyPhoneTestSuite">
+          <div class="suite-BuyPhoneTestSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.freedommobile.userstories.BuyPhoneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=130.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Gold, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=394.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=83.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Black, phoneSimCard=, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=3v, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Alcatel, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 12GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=108.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=, phoneColour=Silver, phoneSimCard=eSim, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=, phonePlanCategory=Freedom Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Promo Freedom 6GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=119.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Pacific Blue, phoneSimCard=eSim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=401.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=114.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Graphite, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=387.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=83.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Black, phoneSimCard=, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=3v, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Alcatel, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 12GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=114.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Graphite, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=387.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=119.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Pacific Blue, phoneSimCard=eSim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=401.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=130.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Gold, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=394.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)">
+                  </a> <!-- buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...) -->
+                  <span class="method-name">buyPhoneAsGuestTest</span>
+                  <span class="parameters">({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=108.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=, phoneColour=Silver, phoneSimCard=eSim, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=, phonePlanCategory=Freedom Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Promo Freedom 6GB})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BuyPhoneTestSuite-class-passed -->
+        </div> <!-- panel BuyPhoneTestSuite -->
+        <div panel-name="test-xml-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\serge\eclipse-workspace\Freedommobile-test\src\test\resources\testSuites\SeparaTetestSuites\BuyPhoneTestSuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;BuyPhoneTestSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;BuyPhoneTest-CH&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.freedommobile.userstories.BuyPhoneTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BuyPhoneTest-CH --&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot;BuyPhoneTest-FF&quot; parallel=&quot;tests&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.freedommobile.userstories.BuyPhoneTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- BuyPhoneTest-FF --&gt;
+&lt;/suite&gt; &lt;!-- BuyPhoneTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for BuyPhoneTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">BuyPhoneTest-CH (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">BuyPhoneTest-FF (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for BuyPhoneTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for BuyPhoneTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_BuyPhoneTestSuite');
+function tableData_BuyPhoneTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'buyPhoneAsGuestTest')
+data.setCell(0, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(0, 3, 37920);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'buyPhoneAsGuestTest')
+data.setCell(1, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(1, 3, 33423);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'buyPhoneAsGuestTest')
+data.setCell(2, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(2, 3, 32432);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'buyPhoneAsGuestTest')
+data.setCell(3, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(3, 3, 32308);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'buyPhoneAsGuestTest')
+data.setCell(4, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(4, 3, 31653);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'buyPhoneAsGuestTest')
+data.setCell(5, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(5, 3, 30334);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'buyPhoneAsGuestTest')
+data.setCell(6, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(6, 3, 26200);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'buyPhoneAsGuestTest')
+data.setCell(7, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(7, 3, 26126);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'buyPhoneAsGuestTest')
+data.setCell(8, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(8, 3, 25918);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'buyPhoneAsGuestTest')
+data.setCell(9, 2, 'com.freedommobile.userstories.BuyPhoneTest')
+data.setCell(9, 3, 25758);
+window.suiteTableData['BuyPhoneTestSuite']= { tableData: data, tableDiv: 'times-div-BuyPhoneTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-BuyPhoneTestSuite">
+              </div> <!-- times-div-BuyPhoneTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for BuyPhoneTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-BuyPhoneTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.freedommobile.userstories.BuyPhoneTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@d2387c8, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGues...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@3956b302, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGue...)</span>
+                <span class="method-start">194 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)</span>
+                <span class="method-start">5197 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expect...)</span>
+                <span class="method-start">6354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35775 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@d2387c8, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGues...)</span>
+                <span class="method-start">37868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">41384 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">44438 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@3956b302, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGue...)</span>
+                <span class="method-start">46269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">51513 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76138 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@d2387c8, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGues...)</span>
+                <span class="method-start">78327 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">82811 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">89501 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@3956b302, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGue...)</span>
+                <span class="method-start">91230 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">96387 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">120672 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@d2387c8, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGues...)</span>
+                <span class="method-start">122760 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)</span>
+                <span class="method-start">126738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">140008 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@3956b302, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGue...)</span>
+                <span class="method-start">141737 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expecte...)</span>
+                <span class="method-start">146875 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">157170 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@d2387c8, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGues...)</span>
+                <span class="method-start">159253 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">163286 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver(org.testng.TestRunner@3956b302, public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGue...)</span>
+                <span class="method-start">185978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">buyPhoneAsGuestTest({deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, ex...)</span>
+                <span class="method-start">191168 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">193485 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">222970 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

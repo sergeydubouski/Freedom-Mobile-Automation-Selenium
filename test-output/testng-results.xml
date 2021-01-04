@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BuyPhoneTestSuite" duration-ms="225348" started-at="2021-01-03T21:42:50 EST" finished-at="2021-01-03T21:46:35 EST">
+    <groups>
+    </groups>
+    <test name="BuyPhoneTest-FF" duration-ms="196259" started-at="2021-01-03T21:42:50 EST" finished-at="2021-01-03T21:46:06 EST">
+      <class name="com.freedommobile.userstories.BuyPhoneTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="setUpDriver" is-config="true" duration-ms="5054" started-at="2021-01-03T21:42:51 EST" finished-at="2021-01-03T21:42:56 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d2387c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="buyPhoneAsGuestTest" duration-ms="26126" started-at="2021-01-03T21:42:56 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:43:22 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=108.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=, phoneColour=Silver, phoneSimCard=eSim, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=, phonePlanCategory=Freedom Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Promo Freedom 6GB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="tearDown" is-config="true" duration-ms="2091" started-at="2021-01-03T21:43:27 EST" finished-at="2021-01-03T21:43:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="setUpDriver" is-config="true" duration-ms="3515" started-at="2021-01-03T21:43:29 EST" finished-at="2021-01-03T21:43:32 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d2387c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="buyPhoneAsGuestTest" duration-ms="30334" started-at="2021-01-03T21:43:32 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:44:02 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=114.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Graphite, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=387.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="tearDown" is-config="true" duration-ms="2188" started-at="2021-01-03T21:44:07 EST" finished-at="2021-01-03T21:44:09 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="setUpDriver" is-config="true" duration-ms="4483" started-at="2021-01-03T21:44:09 EST" finished-at="2021-01-03T21:44:14 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d2387c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="buyPhoneAsGuestTest" duration-ms="33423" started-at="2021-01-03T21:44:14 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:44:47 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=119.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Pacific Blue, phoneSimCard=eSim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=401.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="tearDown" is-config="true" duration-ms="2086" started-at="2021-01-03T21:44:51 EST" finished-at="2021-01-03T21:44:54 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="setUpDriver" is-config="true" duration-ms="3977" started-at="2021-01-03T21:44:54 EST" finished-at="2021-01-03T21:44:58 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d2387c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="buyPhoneAsGuestTest" duration-ms="25918" started-at="2021-01-03T21:44:58 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:45:23 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=83.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Black, phoneSimCard=, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=3v, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Alcatel, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 12GB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="tearDown" is-config="true" duration-ms="2082" started-at="2021-01-03T21:45:28 EST" finished-at="2021-01-03T21:45:30 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="setUpDriver" is-config="true" duration-ms="4030" started-at="2021-01-03T21:45:30 EST" finished-at="2021-01-03T21:45:34 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@d2387c8]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="buyPhoneAsGuestTest" duration-ms="25758" started-at="2021-01-03T21:45:34 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:46:00 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=130.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Gold, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=394.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@1bf0f6f6]" name="tearDown" is-config="true" duration-ms="2131" started-at="2021-01-03T21:46:04 EST" finished-at="2021-01-03T21:46:06 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.freedommobile.userstories.BuyPhoneTest -->
+    </test> <!-- BuyPhoneTest-FF -->
+    <test name="BuyPhoneTest-CH" duration-ms="225348" started-at="2021-01-03T21:42:50 EST" finished-at="2021-01-03T21:46:35 EST">
+      <class name="com.freedommobile.userstories.BuyPhoneTest">
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="setUpDriver" is-config="true" duration-ms="6157" started-at="2021-01-03T21:42:51 EST" finished-at="2021-01-03T21:42:57 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3956b302]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="buyPhoneAsGuestTest" duration-ms="32432" started-at="2021-01-03T21:42:57 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:43:30 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=1, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=108.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=, phoneColour=Silver, phoneSimCard=eSim, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=, phonePlanCategory=Freedom Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Promo Freedom 6GB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="tearDown" is-config="true" duration-ms="1719" started-at="2021-01-03T21:43:35 EST" finished-at="2021-01-03T21:43:37 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="setUpDriver" is-config="true" duration-ms="5242" started-at="2021-01-03T21:43:37 EST" finished-at="2021-01-03T21:43:42 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3956b302]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="buyPhoneAsGuestTest" duration-ms="32308" started-at="2021-01-03T21:43:42 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:44:15 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=2, phoneStorageCapacity=128GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=114.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Graphite, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=387.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="tearDown" is-config="true" duration-ms="1728" started-at="2021-01-03T21:44:20 EST" finished-at="2021-01-03T21:44:22 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="setUpDriver" is-config="true" duration-ms="5156" started-at="2021-01-03T21:44:22 EST" finished-at="2021-01-03T21:44:27 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3956b302]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="buyPhoneAsGuestTest" duration-ms="37920" started-at="2021-01-03T21:44:27 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:45:05 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=3, phoneStorageCapacity=256GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=119.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Apple Pacific Blue, phoneSimCard=eSim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=401.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="tearDown" is-config="true" duration-ms="1727" started-at="2021-01-03T21:45:11 EST" finished-at="2021-01-03T21:45:13 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="setUpDriver" is-config="true" duration-ms="5136" started-at="2021-01-03T21:45:13 EST" finished-at="2021-01-03T21:45:18 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3956b302]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="buyPhoneAsGuestTest" duration-ms="31653" started-at="2021-01-03T21:45:18 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:45:49 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=4, phoneStorageCapacity=32GB, bigGigWorldSaverFreedomNationwideAddOn=, expectedTotalMonthly=83.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Black, phoneSimCard=, visualVoicemailAddOn=, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=3v, expectedTotalToday=0.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Alcatel, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 12GB}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="tearDown" is-config="true" duration-ms="1755" started-at="2021-01-03T21:45:55 EST" finished-at="2021-01-03T21:45:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver(org.testng.ITestContext, java.lang.reflect.Method, java.lang.String)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="setUpDriver" is-config="true" duration-ms="5188" started-at="2021-01-03T21:45:57 EST" finished-at="2021-01-03T21:46:02 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3956b302]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.freedommobile.userstories.BuyPhoneTest.buyPhoneAsGuestTest(java.util.Map)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="buyPhoneAsGuestTest(java.util.Map)[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="buyPhoneAsGuestTest" duration-ms="26200" started-at="2021-01-03T21:46:02 EST" data-provider="csvDataReader" finished-at="2021-01-03T21:46:28 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{deviceType=Phone, no=5, phoneStorageCapacity=512GB, bigGigWorldSaverFreedomNationwideAddOn=TRUE, expectedTotalMonthly=130.00, description=Buy a phone as a guest, unlimitedLongDistanceUsAddOn=TRUE, phoneColour=Gold, phoneSimCard=Physical Sim, visualVoicemailAddOn=TRUE, errMsgForExpectedTotalMonthly=Actual total monthly value is not equal to expected total monthly value, worldTravallerAddOn=TRUE, phonePlanCategory=Unlimited Plans, deviceModel=iPhone 12 Pro Max, expectedTotalToday=394.00, errMsgForExpectedTotalToday=Actual total today value is not equal to expected total today value, deviceBrand=Apple, promotion=, phonePlan=plan-Big Gig Unlimited + Talk 20GB Prime}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- buyPhoneAsGuestTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.freedommobile.userstories.BuyPhoneTest@450794b4]" name="tearDown" is-config="true" duration-ms="1739" started-at="2021-01-03T21:46:34 EST" finished-at="2021-01-03T21:46:35 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.freedommobile.userstories.BuyPhoneTest -->
+    </test> <!-- BuyPhoneTest-CH -->
+  </suite> <!-- BuyPhoneTestSuite -->
+</testng-results>

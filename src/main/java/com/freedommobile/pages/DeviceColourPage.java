@@ -21,25 +21,25 @@ public class DeviceColourPage extends BasePageHeader {
 
 	/* click a device storage capacity button */
 	private void clickDeviceStorageCapacityButton(String capacity) {
-		this.clickByWebDriver(By.xpath("//input[@id='" + capacity + "']"));
+		this.clickByJS(By.xpath("//input[@id='" + capacity + "']"));
 		this.log.info("Click storage capacity button by id [" + capacity + "]");
 	}
 
 	/* click a device colour button */
 	private void clickDeviceColourButton(String colour) {
-		this.clickByWebDriver(By.xpath("//li[.='" + colour + "']"));
+		this.clickByJS(By.xpath("//li[.='" + colour + "']"));
 		this.log.info("Click colour button by exact text [" + colour + "]");
 	}
 
 	/* click a device sim card button */
 	private void clickDeviceSimCardButton(String simCard) {
-		this.clickByWebDriver(By.xpath("//input[@id='" + simCard + "']"));
+		this.clickByJS(By.xpath("//input[@id='" + simCard + "']"));
 		this.log.info("Click sim card button by id [" + simCard + "]");
 	}
 
 	/* click continue to plan options button */
 	private void clickCountinueToPlanOptionsButton() {
-		this.clickByWebDriver(this.continueToPlanOptionsButtonLocator);
+		this.clickByJS(this.continueToPlanOptionsButtonLocator);
 		this.log.info("Click Continue to plan options button by data-testid");
 	}
 

@@ -84,7 +84,7 @@ public class TestUtil extends BaseTest {
 	
 	/* scroll a pge all the way down */
 	public static void zoomPageContentByJS(int zoomPercent) {		
-		System.out.println("zoom set " + zoomPercent + " %");
+		System.out.println("zoom set to " + zoomPercent + " %");
 		((JavascriptExecutor)BrowserFactory.getThreadDriver()).executeScript("document.body.style.zoom='"+zoomPercent+"%';");
 		TestUtil.sleep(1000);// it's because a browser is not responsive enough
 	}

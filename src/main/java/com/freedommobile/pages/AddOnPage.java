@@ -61,32 +61,38 @@ public class AddOnPage extends BasePageHeader {
 	
 	/*click continue button*/
 	private void clickContinueButton() {
-		this.clickByWebDriver(this.continueButton);
+		this.clickByJS(this.continueButton);
 	}
 	/*choose phone add-ons*/
 	public ShoppingCartPage choosePhoneAddOns(String worldTraveller, String bigGigWorldSaverFreedomNationwide, String unlimitedLongDistanceUs,String visualVoicemail) {
 		
 		//scroll down the page to display all add-ons
-		TestUtil.scrollPageDown(1200);
+		//TestUtil.scrollPageDown(1200);
 		//wait for loading a page
-		this.waitForVisibility(this.allAddOnOptionsLocator, 10);
+		//this.waitForVisibility(this.allAddOnOptionsLocator, 10);
 		
 		//check world traveller check box
 		if(worldTraveller.equals("TRUE")) {
+			this.waitForPresence(this.worldTravallerCheckBoxLocator, 5);
 			this.checkWorldTravallerCheckBox();
 		}
 		//check big gig world saver freedom nationwide check box
 		if(bigGigWorldSaverFreedomNationwide.equals("TRUE")) {
+			this.waitForPresence(this.bigGigWorldSaverFreedomNationwideCheckBoxLocator, 5);
 			this.checkBigGigWorldSaverFreedomNationwideCheckBox();
 		}
 		//check unlimited long distance US check box
 		if(unlimitedLongDistanceUs.equals("TRUE")) {
+			this.waitForPresence(this.unlimitedLongDistanceUsCheckBoxLocator, 5);
 			this.checkUnlimitedLongDistanceUsCheckBox();
 		}
 		//check visual voicemail check box
 		if(visualVoicemail.equals("TRUE")) {
+			this.waitForPresence(this.visualVoicemailCheckBoxLocator, 5);
 			this.checkVisualVoicemailCheckBox();
-		}	
+		}
+		//click contitue button to go a shopping cart page
+		this.waitForPresence(this.continueButton, 5);
 		this.clickContinueButton();
 		return new ShoppingCartPage(this.driver,this. log);	
 	}

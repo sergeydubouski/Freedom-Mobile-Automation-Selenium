@@ -22,13 +22,13 @@ public class ShoppingCartPage extends BasePageHeader {
 	/*return a total today value*/
 	public String getTotalTodayText() {
 		this.waitForVisibility(totalTodayValueLocator, 5);
-		System.out.println(this.getText(this.totalTodayValueLocator));
-		return this.getText(this.totalTodayValueLocator);
+		System.out.println(this.getInnerText(this.totalTodayValueLocator));
+		return this.getInnerText(this.totalTodayValueLocator);
 	}
 	public String getTotalMonthlyText() {
 		this.waitForVisibility(totalMonthlyValueLocator, 5);
-		System.out.println(this.getText(this.totalMonthlyValueLocator));
-		return this.getText(this.totalMonthlyValueLocator);
+		System.out.println(this.getInnerText(this.totalMonthlyValueLocator));
+		return this.getInnerText(this.totalMonthlyValueLocator);
 	}
 
 }

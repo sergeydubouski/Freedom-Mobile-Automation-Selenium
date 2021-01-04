@@ -122,7 +122,15 @@ public class BasePage {
 	}
 	/*get text of a web element*/
 	protected String getText(By by) {
-		return this.driver.findElement(by).getText();
+		return this.find(by).getText();
+	}
+	/*get outer text*/
+	protected String getOuterText(By by) {
+		return this.find(by).getAttribute("outerText").toString();
+	}
+	/*get inner text*/
+	protected String getInnerText(By by) {
+		return this.find(by).getAttribute("innerText").toString();
 	}
 
 }

@@ -23,17 +23,17 @@ public class InvitationToLoginPage extends BasePage {
 	
 	/*click Close button*/
 	private void clickCloseButton() {
-		this.clickByWebDriver(this.closeButtonLocator);
+		this.clickByJS(this.closeButtonLocator);
 		this.log.info("Click Close button");
 	}
 	/*click Login button*/
 	private void clickLoginButton() {
-		this.clickByWebDriver(this.loginButtonLocator);
+		this.clickByJS(this.loginButtonLocator);
 		this.log.info("Click Login button");
 	}
 	/*click Continue As Guest button*/
 	private void clickContinueAsGuestButton() {
-		this.clickByWebDriver(this.continueAsGuestButtonLocator);
+		this.clickByJS(this.continueAsGuestButtonLocator);
 		this.log.info("Click Continue As Guest button");
 	}
 	
